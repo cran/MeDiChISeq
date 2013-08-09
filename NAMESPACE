@@ -1,0 +1,8 @@
+#  Calling the dynamic library.
+useDynLib(MeDiChISeq)
+
+#  All functions exported other than those starting with "."
+#exportPattern("^[^\\.]")
+#exportPattern("^[[:alpha:]]+")
+
+export( "chip.deconv.seq", "coef.chip.deconv.seq", "plot.chip.deconv.seq", "print.chip.deconv.seq", "deconv.entire.genome.seq", "fit.peak.profile.seq", "remove.clons", "write.wigs.parallel")
